@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الرئيسية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      font-family:'Cairo',sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    header{
+      background:#020617;
+      padding:20px;
+      text-align:center;
+      font-size:24px;
+      font-weight:bold;
+    }
+
+    .container{
+      padding:20px;
+    }
+
+    .categories{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:15px;
+    }
+
+    .category{
+      background:linear-gradient(135deg,#1e293b,#020617);
+      border-radius:16px;
+      padding:30px 10px;
+      text-align:center;
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+      box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .category i{
+      font-size:36px;
+      margin-bottom:10px;
+      display:block;
+    }
+
+    .category span{
+      font-size:16px;
+      font-weight:bold;
+    }
+
+    .category:hover{
+      transform:scale(1.05);
+      background:linear-gradient(135deg,#2563eb,#1e40af);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  المتجر
+</header>
+
+<div class="container">
+  <div class="categories">
+
+    <a href="laptop.html" class="category">
+      <i class="fa fa-laptop"></i>
+      <span>لابتوبات</span>
+    </a>
+
+    <a href="games.html" class="category">
+      <i class="fa fa-gamepad"></i>
+      <span>ألعاب</span>
+    </a>
+
+    <a href="#" class="category">
+      <i class="fa fa-headphones"></i>
+      <span>سماعات</span>
+    </a>
+
+    <a href="#" class="category">
+      <i class="fa fa-microchip"></i>
+      <span>قطع كمبيوتر</span>
+    </a>
+
+  </div>
+</div>
+
+</body>
+</html>
